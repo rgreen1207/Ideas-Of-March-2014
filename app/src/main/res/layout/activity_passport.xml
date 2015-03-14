@@ -21,8 +21,7 @@
         android:layout_height="wrap_content"
         android:text="&lt; Back"
         android:id="@+id/button12"
+        android:onClick="F_BackP"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="300dp"
-        android:onClick="F_BackP"/>
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
