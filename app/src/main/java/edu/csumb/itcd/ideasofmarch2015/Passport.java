@@ -8,35 +8,37 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class MainActivity extends ActionBarActivity {
+public class Passport extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_passport);
     }
 
+    /*
+    public void ScanPass(){
+    boolean success = false;
+    if(success == true)
+    {
+        Intent intent = new Intent(this, Passport_Info.class);
+        startActivity(intent);
+    }
+    else
+    {
+    //Scan again
+    //Keep scanning
+    }
+     */
 
-
-    public void F_ScanDoc(View view){
+    public void F_BackP(View view){
         Intent intent = new Intent(this, ScanDoc.class);
         startActivity(intent);
     }
-
-    public void F_ScanCode(){
-        Intent intent = new Intent(this, ScanCode.class);
-        startActivity(intent);
-    }
-
-    public void F_ManReg(){
-        Intent intent = new Intent(this, ManualReg.class);
-        startActivity(intent);
-    }
-
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_passport, menu);
         return true;
     }
 

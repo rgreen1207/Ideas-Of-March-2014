@@ -8,35 +8,29 @@ import android.view.MenuItem;
 import android.view.View;
 
 
-public class MainActivity extends ActionBarActivity {
+public class QR_Fail extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_qr__fail);
     }
 
 
-
-    public void F_ScanDoc(View view){
-        Intent intent = new Intent(this, ScanDoc.class);
+    public void PNF_Pass(View view){
+        Intent intent = new Intent(this, Passport.class);
         startActivity(intent);
     }
 
-    public void F_ScanCode(){
-        Intent intent = new Intent(this, ScanCode.class);
-        startActivity(intent);
-    }
-
-    public void F_ManReg(){
-        Intent intent = new Intent(this, ManualReg.class);
+    public void PNF_ID(View view){
+        Intent intent = new Intent(this, ID.class);
         startActivity(intent);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_qr__fail, menu);
         return true;
     }
 

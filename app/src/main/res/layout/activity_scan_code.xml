@@ -3,52 +3,58 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.csumb.itcd.ideasofmarch2015.ScanCode">
+
+    TextView android:text="@string/hello_world" android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Emergent"
-        android:id="@+id/textView"
+        android:text="Scan Code"
+        android:id="@+id/textView4"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Scan Document"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Type:"
+        android:id="@+id/textView5"
+        android:layout_below="@+id/textView4"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="92dp"
-        android:onClick="F_ScanDoc"/>
+        android:layout_marginTop="75dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Scan Code"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
+        android:text="QR Code"
+        android:id="@+id/button8"
+        android:layout_below="@+id/textView5"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="88dp"
-        android:onClick="F_ScanCode"/>
+        android:layout_marginTop="70dp"
+        android:onClick="F_QR"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Manual Registration"
-        android:id="@+id/button3"
-        android:layout_centerVertical="true"
+        android:text="Bar Code"
+        android:id="@+id/button9"
+        android:layout_below="@+id/button8"
         android:layout_centerHorizontal="true"
-        android:onClick="F_ManReg"/>
+        android:layout_marginTop="59dp"
+        android:onClick="F_Bar"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Self-Registration"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
+        android:text="&lt; Back"
+        android:id="@+id/button10"
+        android:layout_below="@+id/button9"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="84dp" />
+        android:layout_marginTop="157dp"
+        android:onClick="F_BackSC"/>
 </RelativeLayout>

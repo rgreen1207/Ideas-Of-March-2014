@@ -16,6 +16,62 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".ScanDoc"
+            android:label="@string/title_activity_scan_doc" >
+        </activity>
+        <activity
+            android:name=".ScanCode"
+            android:label="@string/title_activity_scan_code" >
+        </activity>
+        <activity
+            android:name=".Passport"
+            android:label="@string/title_activity_passport" >
+        </activity>
+        <activity
+            android:name=".ID"
+            android:label="@string/title_activity_id" >
+        </activity>
+        <activity
+            android:name=".QR"
+            android:label="@string/title_activity_qr" >
+        </activity>
+        <activity
+            android:name=".BarCode"
+            android:label="@string/title_activity_bar_code" >
+        </activity>
+        <activity
+            android:name=".Passport_Info"
+            android:label="@string/title_activity_passport__info" >
+        </activity>
+        <activity
+            android:name=".ID_Info"
+            android:label="@string/title_activity_id__info" >
+        </activity>
+        <activity
+            android:name=".QR_Success"
+            android:label="@string/title_activity_qr__success" >
+        </activity>
+        <activity
+            android:name=".QR_Fail"
+            android:label="@string/title_activity_qr__fail" >
+        </activity>
+        <activity
+            android:name=".BarFail"
+            android:label="@string/title_activity_bar_fail" >
+        </activity>
+        <activity
+            android:name=".Fin"
+            android:label="@string/title_activity_fin" >
+        </activity>
+        <activity
+            android:name=".ManualReg"
+            android:label="@string/title_activity_manual_reg" >
+        </activity>
+        <activity
+            android:name=".Bar_Success"
+            android:label="@string/title_activity_bar__success" >
+        </activity>
     </application>
 
 </manifest>

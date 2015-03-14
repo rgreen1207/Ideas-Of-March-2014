@@ -3,52 +3,55 @@
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="edu.csumb.itcd.ideasofmarch2015.ScanDoc">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
-        android:text="Emergent"
-        android:id="@+id/textView"
+        android:text="Scan Document"
+        android:id="@+id/textView2"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true" />
 
-    <Button
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Scan Document"
-        android:id="@+id/button"
-        android:layout_below="@+id/textView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Select Type:"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/textView2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="92dp"
-        android:onClick="F_ScanDoc"/>
+        android:layout_marginTop="61dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Scan Code"
-        android:id="@+id/button2"
-        android:layout_below="@+id/button"
+        android:text="Passport"
+        android:id="@+id/button5"
+        android:layout_below="@+id/textView3"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="88dp"
-        android:onClick="F_ScanCode"/>
+        android:layout_marginTop="75dp"
+        android:onClick="F_Pass"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Manual Registration"
-        android:id="@+id/button3"
-        android:layout_centerVertical="true"
+        android:text="ID"
+        android:id="@+id/button6"
+        android:layout_below="@+id/button5"
         android:layout_centerHorizontal="true"
-        android:onClick="F_ManReg"/>
+        android:layout_marginTop="95dp"
+        android:onClick="F_ID"/>
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Self-Registration"
-        android:id="@+id/button4"
-        android:layout_below="@+id/button3"
+        android:text="&lt; Back"
+        android:id="@+id/button7"
+        android:layout_below="@+id/button6"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="84dp" />
+        android:layout_marginTop="165dp"
+        android:onClick="F_BackSD"/>
 </RelativeLayout>
