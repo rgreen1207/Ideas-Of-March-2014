@@ -1,42 +1,37 @@
 package edu.csumb.itcd.ideasofmarch2015;
 
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.view.View;
+
+/*
 
 
-public class MainActivity extends ActionBarActivity {
+
+
+
+NOT IN USE
+
+
+
+
+
+
+ */
+public class BarFail extends ActionBarActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_bar_fail);
     }
 
-
-
-    public void F_ScanDoc(View view){
-        Intent intent = new Intent(this, ScanDoc.class);
-        startActivity(intent);
-    }
-
-    public void F_ScanCode(){
-        Intent intent = new Intent(this, ScanCode.class);
-        startActivity(intent);
-    }
-
-    public void F_ManReg(){
-        Intent intent = new Intent(this, ManualReg.class);
-        startActivity(intent);
-    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_bar_fail, menu);
         return true;
     }
 

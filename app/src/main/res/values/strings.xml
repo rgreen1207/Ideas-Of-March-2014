@@ -1,6 +1,20 @@
 <resources>
-    <string name="app_name">Ideas Of March 2015</string>
+    <string name="app_name">Emergent</string>
 
     <string name="hello_world">Hello world!</string>
     <string name="action_settings">Settings</string>
+    <string name="title_activity_scan_doc">ScanDoc</string>
+    <string name="title_activity_scan_code">ScanCode</string>
+    <string name="title_activity_passport">Passport</string>
+    <string name="title_activity_id">ID</string>
+    <string name="title_activity_qr">QR</string>
+    <string name="title_activity_bar_code">BarCode</string>
+    <string name="title_activity_passport__info">Passport_Info</string>
+    <string name="title_activity_id__info">ID_Info</string>
+    <string name="title_activity_qr__success">QR_Success</string>
+    <string name="title_activity_qr__fail">QR_Fail</string>
+    <string name="title_activity_bar_fail">BarFail</string>
+    <string name="title_activity_fin">Fin</string>
+    <string name="title_activity_manual_reg">ManualReg</string>
+    <string name="title_activity_bar__success">Bar_Success</string>
 </resources>
