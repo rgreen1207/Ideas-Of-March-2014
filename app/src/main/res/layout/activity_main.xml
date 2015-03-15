@@ -1,6 +1,7 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:background="@drawable/blurry"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
@@ -12,43 +13,54 @@
         android:text="Emergent"
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_centerHorizontal="true"
+        android:textSize="48sp"
+        android:textColor="#000" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Scan Document"
         android:id="@+id/button"
-        android:layout_below="@+id/textView"
+        android:background="#fff"
+        android:onClick="F_ScanDoc"
+        android:textColor="#000"
+        android:layout_above="@+id/button2"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="92dp"
-        android:onClick="F_ScanDoc"/>
+        android:layout_marginBottom="113dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Scan Code"
         android:id="@+id/button2"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="88dp"
-        android:onClick="F_ScanCode"/>
+        android:onClick="F_ScanCode"
+        android:background="#FFF"
+        android:textColor="#000"
+        android:layout_marginBottom="133dp"
+        android:layout_above="@+id/button3"
+        android:layout_centerHorizontal="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Manual Registration"
         android:id="@+id/button3"
-        android:layout_centerVertical="true"
+        android:onClick="F_ManReg"
+        android:background="#FFF"
+        android:textColor="#000"
+        android:layout_above="@+id/button4"
         android:layout_centerHorizontal="true"
-        android:onClick="F_ManReg"/>
+        android:layout_marginBottom="122dp" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Self-Registration"
         android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="84dp" />
+        android:background="#FFF"
+        android:textColor="#000"
+        android:layout_marginBottom="102dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
 </RelativeLayout>
