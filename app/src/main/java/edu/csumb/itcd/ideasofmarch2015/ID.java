@@ -1,78 +1,35 @@
 package edu.csumb.itcd.ideasofmarch2015;
 
 import android.content.Intent;
-import android.content.IntentFilter;
-import android.content.IntentFilter.MalformedMimeTypeException;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.nfc.*;
-import android.util.Log;
-import android.os.Parcelable;
 
 
-
-//test
 public class ID extends ActionBarActivity {
 
-    private static final String TAG = "zMessage";
-    private static IntentFilter[] mFilters;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_id);
     }
 
-
-    public void onResume() {
-        super.onResume();
-        if (NfcAdapter.ACTION_NDEF_DISCOVERED.equals(getIntent().getAction())) {
-            IntentFilter ndef = new IntentFilter(NfcAdapter.ACTION_NDEF_DISCOVERED);
-            Intent intent = getIntent();
-            Parcelable[] rawMsgs = intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES);
-            if (rawMsgs != null) {
-                NdefMessage[] msgs = new NdefMessage[rawMsgs.length];
-                for (int i = 0; i < rawMsgs.length; i++) {
-                    msgs[i] = (NdefMessage) rawMsgs[i];
-                    Log.i(TAG, msgs[i].toString());
-                }
-            }
-        }
-        //process the msgs array
-    }
-
-
-    public void onPause(){
-        super.onPause();
-    }
     /*
-    public void scanID() {
-        boolean success = false;
-        if (success == true) {
-            Intent intent = new Intent(this, ID_Info.class);
-            startActivity(intent);
-        }
-        else {
-            if (NfcAdapter.ACTION_NDEF_DISCOVERED.equals(getIntent().getAction())) {
-                Parcelable[] rawMsgs;
-                try {
-                    rawMsgs = Intent.getParcelableArrayExtra(NfcAdapter.EXTRA_NDEF_MESSAGES);
-                } catch (CardServiceException e) {
-                    Log.i(TAG, "exception");
-                }
-                if (rawMsgs != null) {
-                    msgs = new NdefMessage[rawMsgs.length];
-                    for (int i = 0; i < rawMsgs.length; i++) {
-                        msgs[i] = (NdefMessage) rawMsgs[i];
-                        Log.i(TAG, msgs[i]);
-                    }
-                }
-            }
-        }
+    public void ScanID(){
+    boolean success = false;
+    if(success == true)
+    {
+        Intent intent = new Intent(this, ID_Info.class);
+        startActivity(intent);
     }
-    */
+    else
+    {
+    //Scan again
+    //Keep scanning
+    }
+     */
 
     public void F_BackID(View view){
         Intent intent = new Intent(this, ScanDoc.class);
