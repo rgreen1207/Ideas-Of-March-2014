@@ -22,9 +22,9 @@
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="92dp"
-        android:onClick="F_ScanDoc"/>
+        android:onClick="F_ScanDoc"/><![CDATA[
 
-    <Button
+    Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Scan Code"
@@ -34,7 +34,7 @@
         android:layout_marginTop="88dp"
         android:onClick="F_ScanCode"/>
 
-    <Button
+    Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Manual Registration"
@@ -43,12 +43,33 @@
         android:layout_centerHorizontal="true"
         android:onClick="F_ManReg"/>
 
+    ]]>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan Code"
+        android:id="@+id/button2"
+        android:onClick="F_ScanCode"
+        android:layout_below="@+id/button"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginTop="117dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Manual Registration"
+        android:id="@+id/button3"
+        android:onClick="F_ManReg"
+        android:layout_alignBaseline="@+id/button2"
+        android:layout_alignBottom="@+id/button2"
+        android:layout_toStartOf="@+id/button" />
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Self-Registration"
         android:id="@+id/button4"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="84dp" />
+        android:layout_alignTop="@+id/button3"
+        android:layout_toEndOf="@+id/button" />
 </RelativeLayout>

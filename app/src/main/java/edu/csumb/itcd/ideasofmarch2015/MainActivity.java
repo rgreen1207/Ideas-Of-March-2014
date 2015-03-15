@@ -23,12 +23,12 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
-    public void F_ScanCode(){
+    public void F_ScanCode(View view){
         Intent intent = new Intent(this, ScanCode.class);
         startActivity(intent);
     }
 
-    public void F_ManReg(){
+    public void F_ManReg(View view){
         Intent intent = new Intent(this, ManualReg.class);
         startActivity(intent);
     }
