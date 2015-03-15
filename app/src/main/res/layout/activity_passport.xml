@@ -24,4 +24,14 @@
         android:onClick="F_BackP"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        android:id="@+id/button27"
+        android:layout_above="@+id/button12"
+        android:onClick="scanPass"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/textView7" />
 </RelativeLayout>
