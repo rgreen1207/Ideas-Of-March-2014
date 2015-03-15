@@ -17,4 +17,7 @@
     <string name="title_activity_fin">Fin</string>
     <string name="title_activity_manual_reg">ManualReg</string>
     <string name="title_activity_bar__success">Bar_Success</string>
+    <string name="field">field</string>
+    <string name="button_text">OCR!</string>
+    <string name="text_hint">OCRed Text will appear here</string>
 </resources>

@@ -51,4 +51,17 @@
         android:layout_below="@+id/button3"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="84dp" />
+
+    <Button
+            android:id="@+id/button_ocr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/button_text"
+            android:onClick="ocr" />
+
+    <EditText
+            android:id="@+id/field"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/text_hint" />
 </RelativeLayout>
