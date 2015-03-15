@@ -9,6 +9,7 @@ import android.os.Environment;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -32,12 +33,12 @@ public class MainActivity extends ActionBarActivity {
         startActivity(intent);
     }
 
-    public void F_ScanCode() {
+    public void F_ScanCode(View view){
         Intent intent = new Intent(this, ScanCode.class);
         startActivity(intent);
     }
 
-    public void F_ManReg(){
+    public void F_ManReg(View view){
         Intent intent = new Intent(this, ManualReg.class);
         startActivity(intent);
     }
