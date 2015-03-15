@@ -6,11 +6,12 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import org.jmrtd.PassportService;
+
+/*import org.jmrtd.PassportService;
 import net.sf.scuba.smartcards.CardService;
 import net.sf.scuba.smartcards.CardTerminalListener;
 import net.sf.scuba.smartcards.CardFileInputStream;
-
+*/
 public class Passport extends ActionBarActivity {
 
     @Override
