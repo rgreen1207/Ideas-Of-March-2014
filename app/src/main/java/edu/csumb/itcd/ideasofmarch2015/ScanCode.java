@@ -82,4 +82,9 @@ public class ScanCode extends ActionBarActivity{
              }
          }
      }
+
+    public void F_BackID(View view){
+        Intent intent = new Intent(this, MainActivity.class);
+        startActivity(intent);
+    }
  }
