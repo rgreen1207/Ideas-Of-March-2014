@@ -12,9 +12,6 @@ import android.nfc.*;
 import android.util.Log;
 import android.os.Parcelable;
 
-import net.sf.scuba.smartcards.CardServiceException;
-
-import java.nio.charset.Charset;
 
 
 
@@ -39,13 +36,17 @@ public class ID extends ActionBarActivity {
                 NdefMessage[] msgs = new NdefMessage[rawMsgs.length];
                 for (int i = 0; i < rawMsgs.length; i++) {
                     msgs[i] = (NdefMessage) rawMsgs[i];
-                    Log.e(TAG, msgs[i].toString());
+                    Log.i(TAG, msgs[i].toString());
                 }
             }
         }
         //process the msgs array
     }
 
+
+    public void onPause(){
+        super.onPause();
+    }
     /*
     public void scanID() {
         boolean success = false;

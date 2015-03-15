@@ -6,7 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-
+/*
 import org.jmrtd.PassportApduService;
 import org.jmrtd.PassportService;
 import net.sf.scuba.smartcards.CardService;
@@ -16,7 +16,7 @@ import net.sf.scuba.smartcards.CardFileInputStream;
 import net.sf.scuba.smartcards.CommandAPDU;
 import net.sf.scuba.smartcards.ResponseAPDU;
 import net.sf.scuba.smartcards.WrappingCardService;
-
+*/
 public class Passport extends ActionBarActivity {
 
     @Override
@@ -25,7 +25,7 @@ public class Passport extends ActionBarActivity {
         setContentView(R.layout.activity_passport);
     }
 
-
+    /*
     public void scanPass(){
         boolean success = false;
         if(success == true){
@@ -56,7 +56,7 @@ public class Passport extends ActionBarActivity {
             }
         }
     }
-
+    */
 
     public void F_BackP(View view){
         Intent intent = new Intent(this, ScanDoc.class);
