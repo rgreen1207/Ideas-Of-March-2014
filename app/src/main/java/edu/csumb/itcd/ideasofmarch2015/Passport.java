@@ -6,10 +6,16 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+
+import org.jmrtd.PassportApduService;
 import org.jmrtd.PassportService;
 import net.sf.scuba.smartcards.CardService;
+import net.sf.scuba.smartcards.CardServiceException;
 import net.sf.scuba.smartcards.CardTerminalListener;
 import net.sf.scuba.smartcards.CardFileInputStream;
+import net.sf.scuba.smartcards.CommandAPDU;
+import net.sf.scuba.smartcards.ResponseAPDU;
+import net.sf.scuba.smartcards.WrappingCardService;
 
 public class Passport extends ActionBarActivity {
 
@@ -19,23 +25,38 @@ public class Passport extends ActionBarActivity {
         setContentView(R.layout.activity_passport);
     }
 
-    /*
-    public void ScanPass(){
-    boolean success = false;
-    if(success == true){
-        Intent intent = new Intent(this, Passport_Info.class);
-        startActivity(intent);
+
+    public void scanPass(){
+        boolean success = false;
+        if(success == true){
+            Intent intent = new Intent(this, Passport_Info.class);
+            startActivity(intent);
+        }
+        else{
+            CardService service = null;
+            try {
+                service = new PassportApduService(service);
+            } catch (CardServiceException e) {
+                e.printStackTrace();
+            }
+            PassportService pass = null;
+            try {
+                pass = new PassportService(service);
+            } catch (CardServiceException e) {
+                e.printStackTrace();
+            }
+            short var = 0;
+            if (pass != null) {
+                try {
+                    pass.open();
+                    pass.getInputStream(var);
+                } catch (CardServiceException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
     }
-    else{
-        CardService service = new CardFileInputStream();
-        PassportService pass = new PassportService(service);
-        short var = 0;
-        pass.getInputStream(var);
-    }
-    //Scan again
-    //Keep scanning
-    }
-    */
+
 
     public void F_BackP(View view){
         Intent intent = new Intent(this, ScanDoc.class);
